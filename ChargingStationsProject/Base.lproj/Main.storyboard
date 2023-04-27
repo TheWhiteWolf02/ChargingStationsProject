@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pnk-Ns-Bzj">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PQq-KI-gWW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pnk-Ns-Bzj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0er-N4-GgZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jZb-Th-yIU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgD-W3-dM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982.4427480916029" y="-27.464788732394368"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="CariadProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9W-8e-Q7W">
+                                <rect key="frame" x="10" y="133" width="373" height="685"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x9W-8e-Q7W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0yR-vN-vTL"/>
+                            <constraint firstItem="x9W-8e-Q7W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="4sd-Fl-6jc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x9W-8e-Q7W" secondAttribute="bottom" id="m9D-vn-Zeg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x9W-8e-Q7W" secondAttribute="trailing" constant="10" id="sJ0-lC-GBJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4uy-Mg-ASB"/>
+                    <connections>
+                        <outlet property="mapView" destination="x9W-8e-Q7W" id="bnC-DQ-48M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909.1603053435115" y="-27.464788732394368"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Ozc-Op-d2k">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Gk-ZS-MNg" customClass="DetailsViewController" customModule="CariadProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1aX-fL-oJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charging Station Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eld-LW-a3D">
+                                <rect key="frame" x="55.333333333333343" y="109" width="282.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWI-4c-MYD">
+                                <rect key="frame" x="180" y="219" width="33" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Charging Stations" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1F-7c-Lfc">
+                                <rect key="frame" x="86.000000000000014" y="289.33333333333331" width="221.33333333333337" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5N-rD-aSi">
+                                <rect key="frame" x="10" y="359.66666666666669" width="373" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cj6-g3-w2g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eld-LW-a3D" firstAttribute="centerX" secondItem="cj6-g3-w2g" secondAttribute="centerX" id="9iP-oV-hCV"/>
+                            <constraint firstItem="N5N-rD-aSi" firstAttribute="top" secondItem="Y1F-7c-Lfc" secondAttribute="bottom" constant="50" id="Iql-Qw-8EY"/>
+                            <constraint firstItem="aWI-4c-MYD" firstAttribute="centerX" secondItem="cj6-g3-w2g" secondAttribute="centerX" id="No1-jZ-UIh"/>
+                            <constraint firstItem="Eld-LW-a3D" firstAttribute="top" secondItem="cj6-g3-w2g" secondAttribute="top" constant="50" id="Ol7-Fb-Npk"/>
+                            <constraint firstItem="Y1F-7c-Lfc" firstAttribute="centerX" secondItem="cj6-g3-w2g" secondAttribute="centerX" id="Y8K-7k-wUh"/>
+                            <constraint firstItem="Y1F-7c-Lfc" firstAttribute="top" secondItem="aWI-4c-MYD" secondAttribute="bottom" constant="50" id="lbX-i3-6rT"/>
+                            <constraint firstItem="N5N-rD-aSi" firstAttribute="leading" secondItem="cj6-g3-w2g" secondAttribute="leading" constant="10" id="oWZ-DS-jg0"/>
+                            <constraint firstItem="aWI-4c-MYD" firstAttribute="top" secondItem="Eld-LW-a3D" secondAttribute="bottom" constant="80" id="rGG-oH-DDE"/>
+                            <constraint firstItem="cj6-g3-w2g" firstAttribute="trailing" secondItem="N5N-rD-aSi" secondAttribute="trailing" constant="10" id="ttd-XE-BCJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="N5N-rD-aSi" id="a9J-cg-t45"/>
+                        <outlet property="numberLabel" destination="Y1F-7c-Lfc" id="9bg-Mi-bXw"/>
+                        <outlet property="titleLabel" destination="aWI-4c-MYD" id="XiU-i8-wM0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXZ-MS-EIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874.0458015267172" y="-18.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

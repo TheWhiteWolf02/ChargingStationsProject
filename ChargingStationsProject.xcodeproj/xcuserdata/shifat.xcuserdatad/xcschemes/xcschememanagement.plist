@@ -7,7 +7,20 @@
 		<key>CariadProject.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7661EA3E29C13FA4000F4E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7661EA6129C141EB000F4E86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
